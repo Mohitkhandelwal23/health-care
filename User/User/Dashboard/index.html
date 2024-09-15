@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrollable Appointment Form with Particle Background</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Link to Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+
+    <!-- Scrollable Appointment Form -->
+    <div class="form-container">
+        <form id="bookingForm">
+            <h2>Book Your Appointment</h2>
+
+            <!-- Dropdown for Purpose of Visit -->
+            <div class="form-group">
+                <label for="purpose"><i class="fas fa-calendar-check"></i> Purpose for Visit</label>
+                <select id="purpose" required>
+                    <option value="" disabled selected>Select purpose</option>
+                    <option value="checkup">Routine Checkup</option>
+                    <option value="consultation">Consultation</option>
+                    <option value="followup">Follow-up</option>
+                    <option value="emergency">Emergency</option>
+                    <option value="surgery">Surgery</option>
+                </select>
+            </div>
+
+            <!-- Dropdown for Choosing Available Doctors -->
+            <div class="form-group">
+                <label for="doctor"><i class="fas fa-user-md"></i> Choose Doctor</label>
+                <select id="doctor" required>
+                    <option value="" disabled selected>Select doctor</option>
+                    <option value="drSmith">Dr. John Smith</option>
+                    <option value="drJones">Dr. Emily Jones</option>
+                    <option value="drLee">Dr. Michael Lee</option>
+                    <option value="drWang">Dr. Lisa Wang</option>
+                    <option value="drPatel">Dr. Raj Patel</option>
+                </select>
+            </div>
+
+            <!-- Display Available Beds -->
+            <div class="form-group">
+                <label for="beds"><i class="fas fa-bed"></i> Available Beds</label>
+                <input type="text" id="beds" readonly placeholder="Number of available beds will be shown here">
+            </div>
+
+            <!-- Duration of Treatment -->
+            <div class="form-group">
+                <label for="duration"><i class="fas fa-hourglass-half"></i> Treatment Duration</label>
+                <select id="duration" required>
+                    <option value="" disabled selected>Select duration</option>
+                    <option value="1_day">1 Day</option>
+                    <option value="1_week">1 Week</option>
+                    <option value="2_weeks">2 Weeks</option>
+                    <option value="1_month">1 Month</option>
+                    <option value="more">More than 1 Month</option>
+                </select>
+            </div>
+
+            <!-- Time Picker for Appointment Time -->
+            <div class="form-group">
+                <label for="time"><i class="fas fa-clock"></i> Preferred Time</label>
+                <input type="time" id="time" required>
+            </div>
+
+            <!-- Date Picker for Treatment Date -->
+            <div class="form-group">
+                <label for="date"><i class="fas fa-calendar-alt"></i> Preferred Treatment Date</label>
+                <input type="date" id="date" required>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn">Book Appointment</button>
+        </form>
+    </div>
+
+    <!-- Load particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- Particle JS configuration -->
+    <script src="particles-config.js"></script>
+
+    <!-- Script for form validation -->
+    <script src="script.js"></script>
+</body>
+</html>

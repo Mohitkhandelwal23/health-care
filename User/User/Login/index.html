@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Link to Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Gradient Background -->
+    <div class="gradient-background"></div>
+
+    <!-- Login Form Container -->
+    <div class="login-container">
+        <form id="loginForm">
+            <h2>Login</h2>
+
+            <div class="form-group">
+                <label for="emailOrPhone"><i class="fas fa-user"></i> Email or Phone Number</label>
+                <input type="text" id="emailOrPhone" placeholder="Enter your email or phone number" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password"><i class="fas fa-lock"></i> Password</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
+            </div>
+
+            <button type="submit" class="btn">Login</button>
+            <p class="forgot-password"><a href="#">Forgot your password?</a></p>
+        </form>
+    </div>
+
+    <!-- Script for form submission -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="admin dash.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Updated Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h2>Admin Panel</h2>
+        </div>
+        <div class="sidebar-profile">
+            <img src="https://i.pravatar.cc/100" alt="Profile Image">
+            <p>Admin</p>
+        </div>
+        <ul class="sidebar-menu">
+            <li><a href="#"><i class="icon-dashboard"></i> Dashboard</a></li>
+            <li><a href="C:\Users\LENOVO\Downloads\MY WEB SITE\MY WEB SITE\admin invoice.html"><i class="icon-invoice"></i> Invoices</a></li>
+            <li><a href="#"><i class="icon-customers"></i> Customers</a></li>
+            <li><a href="#"><i class="icon-inventory"></i> Inventory</a></li>
+            <li><a href="#"><i class="icon-reports"></i> Reports</a></li>
+            <li><a href="#"><i class="icon-settings"></i> Settings</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Header -->
+        <div class="header">
+            <h3>Dashboard</h3>
+            <div class="header-actions">
+                <input type="text" placeholder="Search...">
+                <i class="icon-bell"></i>
+                <button>Logout</button>
+            </div>
+        </div>
+
+        <!-- Dashboard Cards -->
+        <div class="dashboard-cards">
+            <div class="card card-1">
+                <div class="card-icon">
+                    <i class="icon-sales"></i>
+                </div>
+                <div class="card-content">
+                    <h4>Total Sales</h4>
+                    <p>$20,500</p>
+                </div>
+            </div>
+
+            <div class="card card-2">
+                <div class="card-icon">
+                    <i class="icon-customers"></i>
+                </div>
+                <div class="card-content">
+                    <h4>New Customers</h4>
+                    <p>75</p>
+                </div>
+            </div>
+
+            <div class="card card-3">
+                <div class="card-icon">
+                    <i class="icon-invoice"></i>
+                </div>
+                <div class="card-content">
+                    <h4>Pending Invoices</h4>
+                    <p>18</p>
+                </div>
+            </div>
+
+            <div class="card card-4">
+                <div class="card-icon">
+                    <i class="icon-revenue"></i>
+                </div>
+                <div class="card-content">
+                    <h4>Total Revenue</h4>
+                    <p>$150,000</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Table or Widgets -->
+        <div class="dashboard-widgets">
+            <h4>Recent Transactions</h4>
+            <table class="transaction-table">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Transaction ID</th>
+                        <th>Customer</th>
+                        <th>Amount</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2024-09-12</td>
+                        <td>#12456</td>
+                        <td>Mark Lee</td>
+                        <td>$200.00</td>
+                        <td><span class="status success">Paid</span></td>
+                    </tr>
+                    <tr>
+                        <td>2024-09-11</td>
+                        <td>#12457</td>
+                        <td>Sarah Johnson</td>
+                        <td>$150.00</td>
+                        <td><span class="status pending">Pending</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>

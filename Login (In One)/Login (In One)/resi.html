@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospital Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<link rel="stylesheet" href="resi.css">
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2>Receptionist Dashboard</h2>
+    <ul>
+      <li><a href="C:\Users\hirilal\Downloads\appointment.html">Appointments</a></li>
+      <li><a href="C:\Users\hirilal\Downloads\check.html">check-in</a></li>
+      <li><a href="C:\Users\hirilal\Downloads\opd.html">OPD Management</a></li>
+      <li><a href="C:\Users\hirilal\Downloads\bill.html">Billing Management</a></li>
+      <li><a href="#">Settings</a></li>
+    </ul>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <h1>Welcome to the Hospital Dashboard</h1>
+
+    <!-- Dashboard Widgets Section -->
+    <div class="dashboard-widgets">
+      <div class="widget">
+        <i class='bx bx-user'></i>
+        <h3>Total Patients</h3>
+        <p id="totalPatients">120</p>
+      </div>
+      <div class="widget">
+        <i class='bx bx-calendar'></i>
+        <h3>Upcoming Appointments</h3>
+        <p id="upcomingAppointments">15</p>
+      </div>
+      <div class="widget">
+        <i class='bx bx-money'></i>
+        <h3>Unpaid Bills</h3>
+        <p id="unpaidBills">$3,250</p>
+      </div>
+      <div class="widget">
+        <i class='bx bx-line-chart'></i>
+        <h3>Revenue</h3>
+        <p id="revenue">$52,000</p>
+      </div>
+    </div>
+
+    <!-- Placeholder for future content (such as lists of patients, appointments, etc.) -->
+    <div class="section" id="dashboardContent">
+      <h2>Recent Activity</h2>
+      <p>This section can display recent patient check-ins, latest appointments, and more.</p>
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
